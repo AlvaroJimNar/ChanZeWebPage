@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>ChanZe</title>
+  
+  
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css'>
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#cardList {
+  height: 100px;
+  width: 800px;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card {
+  display: inline-block;
+  background-color: red;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.card > img {
+  width: 100px;
+  height: 100px;
+}
+
+.arrow-down {
+  margin-left: 50%;
+  width: 2px; 
+  height: 100%; 
+  background-color: gold;
+  position: absolute;
+}
+#dialog-msg > img {
+  width: 150px;
+  height: 150px;
+}
+#dialog-msg {
+  text-align: center;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" onload="show()">
+  <div id=unbox-area>
+  
+  <div id=cardList>
+    <div class="arrow-down"></div>
+  </div>
+ 
+</div>
+<button onclick="openCase();">Open</button>
+<div id=dialog>
+  <div id=dialog-msg></div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+      <script id="rendered-js" >
+var img = {
+  blue: '<img src="https://i.postimg.cc/85PgC9nb/Llavero-pikachu.png"/>',
+  purple: '<img src="https://zavers.es/14309-large_default/poke47.jpg"/>',
+  pink: '<img src="https://i.postimg.cc/0ysV0md6/cartas-pokemon.png"/>',
+  red: '<img src="https://images.wikidexcdn.net/mwuploads/wikidex/2/21/latest/20190605134318/Car%C3%A1tula_Pok%C3%A9mon_Espada.png"/>',
+  yellow: '<img src="https://i.postimg.cc/TYRyj35d/pokemon-arceus.jpg"/>' };
+
+function show(){
+  for (var i = 0; i < 210; i++) {if (window.CP.shouldStopExecution(0)) break;
+    var element = '<div class="card" style="background-color: lightblue;" data-rarity="blue" id=itemNumber' + i + '>' + img.blue + '</div>';
+    var rand = random(1, 10000) / 100;
+    if (rand < 20) {
+      element = '<div class="card" style="background-color: purple;" data-rarity="purple" id=itemNumber' + i + '>' + img.purple + '</div>';
+    }
+    if (rand < 5) {
+      element = '<div class="card" style="background-color: hotpink;" data-rarity="pink" id=itemNumber' + i + '>' + img.pink + '</div>';
+    }
+    if (rand < 2) {
+      element = '<div class="card" style="background-color: red;" data-rarity="red" id=itemNumber' + i + '>' + img.red + '</div>';
+    }
+    if (rand < 0.5) {
+      element = '<div class="card" style="background-color: yellow;" data-rarity="yellow" id=itemNumber' + i + '>' + img.yellow + '</div>';
+    }
+
+    $('#cardList').append(element);
+  }window.CP.exitedLoop(0);
+  $('.card').first().css('margin-left', -1000);
+}
+function reset() {
+  $('.card').remove();
+  for (var i = 0; i < 210; i++) {if (window.CP.shouldStopExecution(0)) break;
+    var element = '<div class="card" style="background-color: lightblue;" data-rarity="blue" id=itemNumber' + i + '>' + img.blue + '</div>';
+    var rand = random(1, 10000) / 100;
+    if (rand < 20) {
+      element = '<div class="card" style="background-color: purple;" data-rarity="purple" id=itemNumber' + i + '>' + img.purple + '</div>';
+    }
+    if (rand < 5) {
+      element = '<div class="card" style="background-color: hotpink;" data-rarity="pink" id=itemNumber' + i + '>' + img.pink + '</div>';
+    }
+    if (rand < 2) {
+      element = '<div class="card" style="background-color: red;" data-rarity="red" id=itemNumber' + i + '>' + img.red + '</div>';
+    }
+    if (rand < 0.5) {
+      element = '<div class="card" style="background-color: yellow;" data-rarity="yellow" id=itemNumber' + i + '>' + img.yellow + '</div>';
+    }
+
+    $('#cardList').append(element);
+  }window.CP.exitedLoop(0);
+  $('.card').first().css('margin-left', -1000);
+}
+
+function openCase() {
+  reset();
+  var rand = random(1000, 20000);
+  var childNumber = Math.floor(rand / 100) + 4;
+  var timings = ["easeOutExpo"];
+  var timing = timings[random(0, timings.length)];
+  var reward = $('#itemNumber' + childNumber).attr('data-rarity');
+
+  $('.card').first().animate({
+    marginLeft: -rand },
+  5000, timing, function () {
+
+    var src = $('#itemNumber' + childNumber + ' img').attr('src');
+    $('#itemNumber' + childNumber).css({ background: "linear-gradient(#00bf09, #246b27)" });
+
+    $('#dialog-msg').html("You have received " + reward + " item!" + "<br><img src=" + src + ">");
+
+    $('#dialog').dialog({
+      modal: true,
+      title: "New item!",
+      resizeable: false,
+      draggable: false,
+      width: 400,
+      buttons: {
+        "Receive item": function () {
+          $(this).dialog("close");
+          // add resources
+        } } });
+
+
+  });
+
+
+  //$('.card').css({backgroundColor: 'red'})
+  //$('.card:nth-child('+(childNumber+1)+')').css({backgroundColor: 'green'})
+}
+
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
