@@ -18,3 +18,4 @@ if($array['contar'] > 0){
 }
 
 ?>
+xd
