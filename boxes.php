@@ -1,5 +1,6 @@
-<?php include_once 'header.php'?>
-<link rel="stylesheet" href="boxes.css">
+<?php include_once 'includes/header.php'?>
+<link rel="stylesheet" href="css/boxes.css">
+<link rel="stylesheet" href="css/boxes2.css">
 <body>
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -35,6 +36,35 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+
+
+
+
+<section class="contentRow">
+            <div class="contentBox1">
+                <form name="form" action="loot.php" method="post">
+                <input class="botoncito" type="hidden" name="submit" id="1" value="1">
+                <button class= "buttoncito" >
+                <img class="houseOne" src="img/LoL.png" alt="Property Image" width="390" height="250">
+                </form>
+            </div>
+            
+            <div class="contentBox2">
+            <form name="form" action="loot.php" method="post">
+                <input class="botoncito" type="hidden" name="submit" id="1" value="1">
+                <button class= "buttoncito" >
+                <img class="houseOne" src="img/pokemon.png" alt="Property Image" width="390" height="250">
+                </form>
+            </div>
+            <div class="contentBox3">
+            <form name="form" action="loot.php" method="post">
+                <input class="botoncito" type="hidden" name="submit" id="1" value="1">
+                <button class= "buttoncito" >
+                <img class="houseOne" src="img/genshin.png" alt="Property Image" width="390" height="250">
+                </form>
+            </div>
+           
+</section>
 </body>
 
-<script src='boxes.js'></script>
+<script src='js/boxes.js'></script>

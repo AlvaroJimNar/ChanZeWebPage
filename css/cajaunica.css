@@ -1,0 +1,324 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 500;
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+}
+header{
+    background-color: rgb(60, 75, 85);
+}
+
+
+/* ------------ ESTILO PROPIO DE LA FUNCION DE TIRADA ------------- */
+#cardList {
+    height: 100px;
+    width: 800px;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.card>img {
+    width: 100px;
+    height: 100px;
+}
+
+.arrow-down {
+    margin-left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: gold;
+    position: absolute;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 500;
+    flex-direction: column;
+    display: flex;
+    background-color:rgba(80, 180, 241,0.75) ;
+}
+header{
+    background-color: rgb(60, 75, 85);
+}
+
+
+/* ------------ ESTILO PROPIO DE LA FUNCION DE TIRADA ------------- */
+#cardList {
+    height: 100px;
+    width: 800px;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.card>img {
+    width: 100px;
+    height: 100px;
+}
+
+.arrow-down {
+    margin-left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: gold;
+    position: absolute;
+}
+
+
+#dialog-msg>img {
+    width: 150px;
+    height: 150px;
+}
+
+#dialog-msg {
+    text-align: center;
+}
+
+.contentRow{
+    padding: 3rem 0;
+    background-image: url('../img/back.gif');
+    background-size: cover;    
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+
+.contentBox1{
+    position: relative;
+    left: 40px;
+
+  
+  
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.locationProp{
+    position: relative;
+    left: 50px;
+    top: 2px;
+}
+
+.house{
+    position: relative;
+    top: 10px;
+    left: 27px;
+}
+
+.houseOne{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+.houseOne:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s ease-out;
+    opacity: 0.4;
+}
+
+
+
+.contentBox2{
+    position: relative;
+    left: 10px;
+    min-height: 20px;
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.house2{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.house2:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    opacity: 0.4;
+}
+
+.contentBox3{
+    background: violet;
+    position: relative;
+    right: 20px;
+   
+    
+  
+    min-height: 20px;
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.house3{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.house3:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    opacity: 0.4;
+}
+.loot-container{
+    
+    position: relative;
+    margin: auto;
+    padding: 8rem;
+}
+
+#unbox-area{
+    height:auto;
+}
+
+.contentRow{
+    padding: 3rem 0;
+    background-image: url('../img/back.gif');
+    background-size: cover;    
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 2rem;
+}
+
+
+.contentBox1{
+    position: relative;
+    left: 40px;
+
+  
+  
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.locationProp{
+    position: relative;
+    left: 50px;
+    top: 2px;
+}
+
+.house{
+    position: relative;
+    top: 10px;
+    left: 27px;
+}
+
+.houseOne{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+.houseOne:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s ease-out;
+    opacity: 0.4;
+}
+
+
+
+.contentBox2{
+    position: relative;
+    left: 10px;
+
+   
+  
+    min-height: 20px;
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.house2{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.house2:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    opacity: 0.4;
+}
+
+.contentBox3{
+    background: violet;
+    position: relative;
+    right: 20px;
+    min-height: 20px;
+    width: 450px;
+    background: transparent;
+    border-radius: 5px;
+
+}
+
+.house3{
+    margin: 10px 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.house3:hover{
+    transform: scale(0.9);
+    transition: transform 0.5s;
+    opacity: 0.4;
+}
+.contenedor-ruleta{
+    position: relative;
+    background:/*#f8f9fa;*/ #212529;
+    padding:3rem;
+    border-radius:21px;
+}
