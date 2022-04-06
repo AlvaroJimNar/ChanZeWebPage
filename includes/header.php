@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?php session_start();?>
   <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
@@ -25,11 +24,11 @@
           <ul>
             <!--<li><a class="button outline" href="index.php">Sobre nosotros</a></li>-->
             <li><a class="button outline" href="boxes.php">Cajas</a></li>
-            <?php if($_SESSION['nickname']){?>
+            
             <li><a class="button outline" href="profile.php">Perfil</a></li>
-            <?php }else{?>
+         
             <li><a class="button outline" href="login.php">Perfil</a></li>
-            <?php } ?>
+          
           </ul>
         </nav>
       </div>

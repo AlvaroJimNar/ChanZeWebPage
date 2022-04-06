@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="register-page">
-        <div class="wrap-register">
-            <h2 class="signup-here">Sign Up Here!</h2>
-            <form class="register-form" action="submit_register.php" method = "POST">
-                <input type="text" for="nombre" class="input-edit" name = "nombre" id = "nombre" placeholder="First Name..." required>
-
-                <input type="text" for="correo" class="input-edit" name = "correo" id = "correo" placeholder="Email..." required>
-                <input type="username" for="nickname" class="input-edit" name = "nickname" id = "nickname" placeholder="Username..." required>
-                <input type="text" for="tlf" class="input-edit" name = "tlf" id = "tlf" placeholder="Phone number..." required>
-                <input type="text" for="direccion" class="input-edit" name = "direccion" id = "direccion" placeholder="Address..." required>
-                <input type="password" for="password" class="input-edit" class="password" name = "password" id = "password" placeholder="Password..." required>
-
-                <input type="text" for="apellido" class="input-edit" name = "apellido" id = "apellido" placeholder="Last Name..." required>
-                <input type="text" for="email" class="input-edit" name = "email" id = "email" placeholder="Email..." required>
-                <input type="username" for="username" class="input-edit" name = "username" id = "username" placeholder="Username..." required>
-                <input type="password" for="contrasenia" class="input-edit" class="psw" name = "contrasenia" id = "contrasenia" placeholder="Password..." required>
-                <input type="submit" class="submit-edit" value="Submit">
-            </form>
-        </div>
+<div class="login-box">
+  <h2>Login</h2>
+  <form class = "login-form" action="includes/submitRegister.php" method="POST">
+    <div class="user-box">
+      <input type="text" for="nombre" class = "input-login" name="nombre" id="nombre" required="">
+      <label>First name</label>
     </div>
+    <div class="user-box">
+      <input type="email" for="correo" class = "input-login" name="correo" id="correo" required="">
+      <label>Mail</label>
+    </div>
+    <div class="user-box">
+      <input type="username" for="nickname" class = "input-login" name="nickname" id="nickname" required="">
+      <label>Nickname</label>
+    </div>
+    <div class="user-box">
+      <input type="tel" for="tlf" class = "input-login" name="tlf" id="tlf" required="">
+      <label>Phone Number</label>
+    </div>
+    <div class="user-box">
+      <input type="text" for="direccion" class = "input-login" name="direccion" id="direccion" required="">
+      <label>Address</label>
+    </div>
+    <div class="user-box">
+      <input type="password" for="password" class = "input-login" name="password" id="password" required="">
+      <label>Password</label>
+    </div>
+    <div class="control">
+        <input type="submit" class = "input-submit" value="Submit">
+    </div>
+    <a href="index.php">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Go Back
+    </a>
+  </form>
+</div> 
 </body>
 </html>

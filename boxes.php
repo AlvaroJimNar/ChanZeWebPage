@@ -8,19 +8,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src='https://ezy.com/cases/Luxury.png' style="width:100%">
+    <img src='img/Rocket.png' style="width:100%">
     <div class="text">Luxury</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="https://ezy.com/cases/Infinity.png" style="width:100%">
+    <img src="img/Luxury.png" style="width:100%">
     <div class="text">Infinity</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext"></div>
-    <img src="https://ezy.com/cases/Cyberstealth.png" style="width:100%">
+    <img src="img/Infinity.png" style="width:100%">
     <div class="text">Cyber Stealth</div>
   </div>
 

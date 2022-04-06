@@ -4,6 +4,21 @@
 
 <head>
 <?php include_once 'includes/header.php';
+require_once('includes/conexion.php');
+session_start();
+$nickname = $_SESSION['nickname'];
+
+$sql = "SELECT * FROM usuario WHERE nickname = $nickname;";
+$result = $conn->query($sql);
+while ($row = $result->fetch_assoc()) {
+    $nombre = $row['nombre'];
+    $correo = $row['correo'];
+    $direccion = $row['direccion'];
+    $objetos_conseguidos = $row['cartera'];
+    $telefono = $row['tlf'];
+}
+
+
 ?>
     <meta charset="UTF-8">
     <title>ChanZe</title>
@@ -23,9 +38,20 @@
                                     <img src="https://i.postimg.cc/z3S18Yx3/Profilepic.png" class="img-fluid rounded avatar-110" alt="profile-image">
                                 </div>
                                 <div class="ml-3">
-                                    <h4 class="mb-1">Username</h4>
-                                    <p class="mb-2"> 69€ </p>
-                                    <a href="#" class="btn btn-primary font-size-14">Master Chief</a>
+                                    <h4 class="mb-1"> <?php echo $nickname; ?></h4>
+                                    
+                                   
+                                        <?php 
+                                            if($objetos_conseguidos < 3){
+                                                echo '<a href="#" class="btn btn-primary font-size-14">Noob</a>';
+                                            }else if($objetos_conseguidos <= 5){
+                                                echo '<a href="#" class="btn btn-primary font-size-14">Young Promise</a>';
+                                            }else{
+                                                echo '<a href="#" class="btn btn-primary font-size-14">Master Chief</a>';
+                                            }
+
+                                        ?>
+                                        
                                 </div>
                             </div>
                             <p>I’m a Ux/UI designer. I spend my whole day, practically every day,<br>
@@ -34,19 +60,31 @@
                                 <li class="mb-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-map-marker mr-3"></i>
-                                        <p class="mb-0"> Nombre </p>
+                                        <p class="mb-0"><?php  echo $nombre;  ?></p>
                                     </div>
                                 </li>
                                 <li class="mb-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-map-marker mr-3"></i>
-                                        <p class="mb-0"> Apellidos </p>
+                                        <p class="mb-0"> <?php echo $correo; ?> </p>
                                     </div>
                                 </li>
                                 <li class="mb-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fa fa-map-marker svg-icon mr-3"></i>
-                                        <p class="mb-0"> Dirección de entrega </p>
+                                        <p class="mb-0"> <?php echo $direccion; ?> </p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa fa-map-marker svg-icon mr-3"></i>
+                                        <p class="mb-0"> <?php echo $telefono; ?> </p>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fa fa-map-marker svg-icon mr-3"></i>
+                                        <p class="mb-0"> <?php echo 'Objetos conseguidos:'. $objetos_conseguidos; ?> </p>
                                     </div>
                                 </li>
 
