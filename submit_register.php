@@ -2,20 +2,12 @@
     try{
         require_once('includes/functions/conexion.php');
         $nombre = $_POST['nombre'];
-
         $correo = $_POST['correo'];
         $nickname = $_POST['nickname'];
         $tlf = $_POST['tlf'];
         $password = $_POST['password'];
         $direccion = $_POST['direccion'];
         $sql = "INSERT INTO usuario (nombre,nickname,correo,tlf,direccion,password) VALUES ('$nombre','$nickname','$correo','$tlf','$direccion','$password');";
-
-        $apellido = $_POST['apellido'];
-        $email = $_POST['email'];
-        $nickname = $_POST['username'];
-        $contrasenia = $_POST['contrasenia'];
-        $sql = "INSERT INTO usuario (nombre,apellido,email,nickname,psw) VALUES ('$nombre','$apellido','$email','$nickname','$contrasenia')";
-
         if(mysqli_query($conn,$sql)){
             echo "<p>Your comment was correctly sent</p>";
         }else{
