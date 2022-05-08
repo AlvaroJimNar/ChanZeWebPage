@@ -42,25 +42,25 @@
 
 <section class="contentRow">
             <div class="contentBox1">
-                <form name="form" action="loot.php" method="post">
+                <form name="form" action="lootLOL.php" method="post">
                 <input class="botoncito" type="hidden" name="submit" id="1" value="1">
                 <button class= "buttoncito" >
-                <img class="houseOne" src="img/LoL.png" alt="Property Image" width="390" height="250">
+                <img class="houseOne" src="img/Infinity.png" alt="Property Image" width="390" height="250">
                 </form>
             </div>
             
             <div class="contentBox2">
-            <form name="form" action="loot.php" method="post">
+            <form name="form" action="lootPKM.php" method="post">
                 <input class="botoncito" type="hidden" name="submit" id="1" value="1">
                 <button class= "buttoncito" >
-                <img class="houseOne" src="img/pokemon.png" alt="Property Image" width="390" height="250">
+                <img class="houseOne" src="img/Rocket.png" alt="Property Image" width="390" height="250">
                 </form>
             </div>
             <div class="contentBox3">
-            <form name="form" action="loot.php" method="post">
+            <form name="form" action="lootgenshin.php" method="post">
                 <input class="botoncito" type="hidden" name="submit" id="1" value="1">
                 <button class= "buttoncito" >
-                <img class="houseOne" src="img/genshin.png" alt="Property Image" width="390" height="250">
+                <img class="houseOne" src="img/Luxury.png" alt="Property Image" width="390" height="250">
                 </form>
             </div>
            

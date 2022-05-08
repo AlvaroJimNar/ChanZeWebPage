@@ -16,6 +16,9 @@ body{
     font-style: normal;
     font-size: 16px;
     line-height: 29px;
+    display: flex;
+    justify-content: center;
+
 }
 .col-lg-4{
     position:relative;
@@ -24,10 +27,14 @@ body{
     padding-left: 15px;
 }
 .row{
-    display:flex;
+    display:grid;
     flex-wrap:wrap;
-    margin-right: -15px;
-    margin-left:-15px;
+    grid-template-columns: fit-content(100%);
+    gap: 1em;
+    height: 300px;
+    width: 100%;
+    justify-items: center;
+    margin: 0 auto;
 }
 .card-profile{
     margin-top:120px;
@@ -45,6 +52,8 @@ body{
     position:relative;
     min-width: 0px;
     word-wrap: break-word;
+    grid-area: 1 / 1 / 3 / 2;
+    width:100%;
 }
 .card-block{
     flex-direction:column;
@@ -187,4 +196,28 @@ i{
     overflow: hidden;
     vertical-align: middle;
 }
-    
+
+.Cart-Container{
+width: 100%;
+height: 85%;
+background-color: #ffffff;
+border-radius: 20px;
+box-shadow: 0px 25px 40px #1687d933;
+margin-top:120px;
+grid-area: 1 / 2 / 2 / 3;
+}
+.Header{
+margin-top:10px;
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+.Heading{
+font-size: 20px;
+margin-left:10px;
+font-family: ‘Open Sans’;
+font-weight: 700;
+color: #2F3841;
+}

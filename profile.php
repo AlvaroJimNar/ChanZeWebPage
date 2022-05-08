@@ -5,7 +5,7 @@
 <head>
 <?php include_once 'includes/header.php';
 require_once('includes/conexion.php');
-session_start();
+
 $nickname = $_SESSION['nickname'];
 
 $sql = "SELECT * FROM usuario WHERE nickname = $nickname;";
@@ -16,6 +16,16 @@ while ($row = $result->fetch_assoc()) {
     $direccion = $row['direccion'];
     $objetos_conseguidos = $row['cartera'];
     $telefono = $row['tlf'];
+}
+
+$comand = "SELECT * FROM objeto s INNER JOIN inventario hp on s.id = hp.id_objeto INNER JOIN usuario h on hp.id_usuario = h.id_usuario;";
+
+$result = $conn->query($comand);
+while ($t = $result->fetch_assoc()) {
+    $nombreObj = $t['nombreObj'];
+    $precio = $t['precio'];
+    $rareza = $t['rareza'];
+    $precio = $t['precio'];
 }
 
 
@@ -94,9 +104,19 @@ while ($row = $result->fetch_assoc()) {
                 </div>
 
             </div>
-            <div class="col-lg-8 card-profile">
-                <div class="card card-block card-stretch card-height">
-                    <div class="card-body">
+            
+            <div class=Cart-Container>
+                <div class=Header>
+                    <h3 class=Heading>Inventario</h3>
+                    <?php
+                    echo $nombreObj;
+                    echo $precio;
+                    echo $rareza;
+                    echo $precio;
+                    ?>
+                </div>
+            </div>
+
 
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <?php session_start();?>
     <meta charset = "utf-8">
     <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +16,7 @@
   <body>
     <header>
       <div class="container">
-        <a href='index.php' ><img src='https://i.postimg.cc/hXxjZQtL/Logo-final-1.png' width="120px " alt='Logo-final-1'/></a>
+        <a href='profile.php' ><img src='https://i.postimg.cc/hXxjZQtL/Logo-final-1.png' width="120px " alt='Logo-final-1'/></a>
         <!--<a href="index.php">
            <img href="https://postimg.cc/zHJzpPRR" width="60px" heigth="60" alt="logo" class="logo">
         
@@ -24,10 +25,8 @@
           <ul>
             <!--<li><a class="button outline" href="index.php">Sobre nosotros</a></li>-->
             <li><a class="button outline" href="boxes.php">Cajas</a></li>
-            
+                    
             <li><a class="button outline" href="profile.php">Perfil</a></li>
-         
-            <li><a class="button outline" href="login.php">Perfil</a></li>
           
           </ul>
         </nav>
