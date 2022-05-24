@@ -10,7 +10,7 @@
 <body>
 <div class="login-box">
   <h2>Login</h2>
-  <form class = "login-form" action="includes/functions/login.php" method="POST">
+  <form class = "login-form" action="includes/login.php" method="POST">
     <div class="user-box">
       <input type="text" class = "input-login" name="nickname" id="nickname" required="">
       <label>Username</label>
