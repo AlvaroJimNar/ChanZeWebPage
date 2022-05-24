@@ -90,6 +90,83 @@ button:focus {
 img {
   max-width: 100%; }
 
+
+
+
+/* MENU BOXES */
+
+.divMenuCajas{
+  background-image: url(../img/boxmenu.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 25.8rem;
+  margin-bottom: -10rem;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: -5rem;
+}
+
+.divMenuCajas2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox1{
+  margin-top: -25rem;
+}
+
+.contentBox2{
+  margin-bottom: 1.5rem;
+}
+
+.contentBox3{
+  margin-top: -25rem;
+}
+
+.imgBoxes{
+  margin-top: -22rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 39rem;
+  margin-bottom: -5rem;
+}
+
+/* CAJA UNICA */
+
+.contGenshin{
+  background-image: url(../img/genshinback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -30%;
+}
+
+.contPKM{
+  background-image: url(../img/pkmback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -30%;
+}
+
+.contLOL{
+  background-image: url(../img/lolback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -30%;
+}
+
+.contenedor-ruleta{
+  margin-top: 10rem;
+}
+
+
+/* PERFIL */
+
+.container-fluid{
+  margin-top: 20rem;
+  padding-top: 20rem;
+}
+
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
@@ -1697,6 +1774,7 @@ img {
 
 /* End Footer Area css
 ============================================================================================ */
+
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
